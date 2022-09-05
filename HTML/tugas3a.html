@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3 a Form</title>
+</head>
+<body>
+    <form name="formLatihan" method="GET" action="#">
+        <table border="0" align="center" cellpadding="15" width="50%">
+          <thead>
+            <tr bgcolor="grey">
+              <th colspan="2">Form Register Produk</th>
+            </tr>
+          </thead>
+          <tfoot>
+              <tr bgcolor="grey">
+                  <th colspan="2">
+                      <input type="submit" name="proses" value="Kirim"/>&nbsp; &nbsp;
+                      <input type="reset" name="unproses" value="Batal"/>
+                  </th>
+              </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td width="25%"><label for="">Nama Produk</label></td>
+              <td>
+                  <input type="text" name="nama" value="" placeholder="Nama Lengkap" size="50" maxlenght="100"/>
+              </td>
+            </tr>
+            <tr>
+                <td><label for="">Jenis Produk</label></td>
+                <td>
+                    <select name="pendidikan">
+                        <option value="" selected>--Kategori Produk--</option>
+                        <option value="">Makanan</option>
+                        <option value="">Minuman</option>
+                        <option value="">Jasa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+              <td><label for="">Harga</label></td>
+              <td>
+                  <input type="text" name="harga" value="" placeholder="Harga" size="50" maxlenght="100"/>
+              </td>
+            </tr>
+            <tr>
+                <td><label for="">Stok</label></td>
+                <td>
+                    <input type="text" name="stok" value="" placeholder="stok" size="50" maxlenght="100"/>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="">Photo</label></td>
+                <td>
+                    <input type="text" name="photo" value="" placeholder="photo" size="50" maxlenght="100"/>
+                </td>
+              </tr>
+          </tbody>
+        </table>
+      </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+h1{
+    color:rgb(74, 114, 151);
+    font-size:25pt;
+    letter-spacing: 5px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+img{
+    border-radius: 50%;
+}
+p{
+	color:rgb(74, 114, 151);
+	text-align:center;
+	font-family:'Times New Roman', Times, serif;
+	font-size:24pt;
+    font-style:italic;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+body{
+	/*background-image: linear-gradient(red, green, blue, yellow);*/
+	background: #ffffff  no-repeat right top;
+	background-attachment:fixed;
+    background-size: cover; 
+	margin: auto;/* margin-top&bottom=0cm, margin-left&right=3cm */
+}
+hr{
+	border-width:2px;
+	border-color:rgb(33, 36, 25);
+	border-style:dotted;
+}
+/* groupping */
+fieldset, legend{
+	border:rgb(33, 36, 25); groove 10px;	
+}
+
+legend{
+	padding:10px; /* all padding */
+	background-color:red;
+	color:gold;
+	font-weight:bold;
+	font-size:14pt;
+	text-transform:uppercase;
+	font-family:ubuntu, calibri;
+	letter-spacing:5px;
+}
+
+ol { 
+	color: gold; 
+} 
+ul { 
+	color: gold;
+} 
