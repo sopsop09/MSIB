@@ -1,0 +1,83 @@
+<h3 align="center">Daftar Mahasiswa</h3>
+		<table align="center" cellpadding="10" width="40%">
+			<thead>
+				<tr bgcolor="tomato">
+					<th>NO</th>
+					<th>NAMA</th>
+					<th>JABATAN</th>
+                    <th>AGAMA</th>
+                    <th>GAJI POKOK</th>
+                    <th>TUNJANGAN JABATAN</th>
+                    <th>TUNJANGAN KESEHATAN</th>
+                    <th>GAJI KOTOR</th>
+                    <th>ZAKAT PROFESI</th>
+                    <th>TAKE HOME PAY</th>
+				</tr>
+			</thead>
+			<tbody>
+<script>
+	//variabel
+	let no, color, nama, jabatan, agama, gapok;
+	//looping
+	for (no = 1; no<=100; no++) {
+		color = no % 2 == 0 ? "lightblue" : "yellow";
+		no % 2 == 0 ? (agama = "Non Muslim") : (agama = "Muslim");
+
+		if (no <=25){
+			jabatan = "Manager";
+		}
+		else if(no >= 26 && no <=50){
+			jabatan = "Asisten Manager";
+		}
+		else if(no >= 51 && no <=75){
+			jabatan = "Supervisor";
+		}
+		else if(no >= 76 && no <=100){
+			jabatan = "Staff";
+		}
+		else{
+			jabatan = "Belum Terdaftar";
+		}
+	
+	
+	switch(jabatan){
+		case "Manager" :
+			gapok = 15000000;
+			break;
+		case "Asisten Manager":
+			gapok = 10000000;
+			break
+		case "Supervisor":
+			gapok = 7000000;
+			break
+		case "Staff":
+			gapok = 4000000;
+			break;
+		default:
+			gapok = "-";
+			break;
+	}
+
+	let tunjab = gapok * 0.2;
+	let tunkes = gapok * 0.1;
+	let gator = gapok + tunjab + tunkes;
+	let zakprof = agama == "Muslim" && gator >= 7000000 ? gator * 0.025 : 0;
+	let tkp = gator - zakprof;
+
+	document.write(`<tr bgcolor="${color}">
+                        <td>${no}</td>
+                        <td>PEGAWAI${no}</td>
+                        <td>${jabatan}</td>
+                        <td>${agama}</td>
+                        <td>${gapok}</td>
+                        <td>${tunjab}</td>
+                        <td>${tunkes}</td>
+                        <td>${gator}</td>
+                        <td>${zakprof}</td>
+                        <td>${gator - zakprof}</td>
+                       
+                    </tr>`);
+                }    
+                </script>
+			</tbody>
+		</table>
